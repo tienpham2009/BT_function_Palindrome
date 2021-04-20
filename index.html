@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đối xứng</title>
+</head>
+<body>
+<script>
+    let arr = prompt('nhap chuỗi');
+    if (checkPal(arr)){
+        alert('chuoi doi xung');
+    }else {
+        alert('chuoi khong doi xung');
+    }
+
+    function checkPal(arr) {
+        if (arr.length === 0 ||arr.length === 1){
+            return true;
+        }else if (arr[0]===arr[arr.length-1]){
+             arr = arr.substring(1,arr.length -1);
+            console.log(arr);
+            return true;
+        }else {
+            return false
+        }
+    }
+
+</script>
+</body>
+</html>
